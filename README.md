@@ -1,6 +1,6 @@
 # modulo_de_usuarios
 
-COMPONENTES           
+# COMPONENTES           
 proyecto
 |-- frontend-nextjs
 |   |--   components
@@ -17,7 +17,7 @@ proyecto
 |   |               |-- auditoria-usuario                # (res_users_deletion)           
 
 
-PAGES 
+# PAGES 
 proyecto
 |-- frontend-nextjs
 |   |     |-- pages
@@ -33,7 +33,7 @@ proyecto
 |   |               |-- registro-actividades             # (res_users_log)
 |   |               |-- auditoria-usuario                # (res_users_deletion) 
 
-HOOKS 
+# HOOKS 
 proyecto
 |-- frontend-nextjs
 |   |-- hooks
@@ -46,7 +46,7 @@ proyecto
 |            |   |-- registro-actividades               # (res_users_log)
 |            |   |-- auditoria-usuario                  # (res_users_deletion) 
 
-CONTROLLERS   
+# CONTROLLERS   
 proyecto
 |-- backend-nestjs
 |   |-- src
@@ -64,7 +64,7 @@ proyecto
 |   |               |-- auditoria-usuario                # (res_users_deletion) 
 
 
-SERVICES  
+# SERVICES  
 proyecto
 |-- backend-nestjs
 |   |-- src
@@ -82,7 +82,7 @@ proyecto
 |   |               |-- auditoria-usuario                # (res_users_deletion) 
 
 
-DTO  
+# DTO  
 proyecto
 |-- backend-nestjs
 |   |-- src
@@ -99,7 +99,7 @@ proyecto
 |   |               |-- registro-actividades             # (res_users_log)
 |   |               |-- auditoria-usuario                # (res_users_deletion) 
 
-MODULES  
+# MODULES  
 proyecto
 |-- backend-nestjs
 |   |-- src
@@ -116,7 +116,7 @@ proyecto
 |   |               |-- registro-actividades             # (res_users_log)
 |   |               |-- auditoria-usuario                # (res_users_deletion) 
 
-ENTITIES 
+# ENTITIES 
 proyecto
 |-- backend-nestjs
 |   |-- src
@@ -133,12 +133,12 @@ proyecto
 |   |               |-- registro-actividades             # (res_users_log)
 |   |               |-- auditoria-usuario                # (res_users_deletion) 
 
-Base de datos
-res_users
-res_groups
-res_partner
-ir.model.access
-res_company
-ir.rule
-res_users_log
-res_users_deletion
+- Base de datos
+  - res_users
+  - res_groups
+  - res_partner
+  - ir.model.access
+  - res_company
+  - ir.rule
+  - res_users_log
+  - res_users_deletion
