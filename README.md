@@ -1,20 +1,34 @@
 # modulo_de_usuarios
 
-# COMPONENTES           
+# COMPONENTES
 proyecto
 |-- frontend-nextjs
-|   |--   components
-|   |           |-- procesos
-|   |           |   |-- gestion-usuarios                   # (res_users) 
-|   |           |   |-- gestion-grupos-usuarios                    # (res_groups)
-|   |           |   |-- gestion-contactos-comerciales      # (res_partner)  
-|   |           |-- ajustes
-|   |           |   |-- configuracion-permisos            # (ir.model.access)   
-|   |           |   |-- configuracion-empresa             # (res_company)
-|   |           |   |-- configuracion-reglas-acceso       # (ir.rule)     
-|   |           |-- reportes
-|   |               |-- registro-actividades             # (res_users_log)
-|   |               |-- auditoria-usuario                # (res_users_deletion)           
+|   |-- components
+|   |   |-- procesos
+|   |   |   |-- gestion-usuarios                            # (res_users) 
+|   |   |   |   |-- UserManagement                          # Componente
+|   |   |   |   |-- UserForm.js                             # Formulario
+|   |   |   |-- gestion-grupos-usuarios                     # (res_groups)
+|   |   |   |   |-- GroupManagement                         # Componente
+|   |   |   |   |-- GroupForm.js                            # Formulario
+|   |   |   |-- gestion-contactos-comerciales               # (res_partner)  
+|   |   |       |-- BusinessContactManagement               # Componente
+|   |   |       |-- BusinessContactForm.js                  # Formulario
+|   |   |-- ajustes
+|   |   |   |-- configuracion-permisos                      # (ir.model.access)   
+|   |   |   |   |-- PermissionConfiguration                 # Componente
+|   |   |   |   |-- PermissionForm.js                       # Formulario
+|   |   |   |-- configuracion-empresa                       # (res_company)
+|   |   |   |   |-- CompanyConfiguration                    # Componente
+|   |   |   |   |-- CompanyForm.js                          # Formulario
+|   |   |   |-- configuracion-reglas-acceso                 # (ir.rule)    
+|   |   |       |-- AccessRuleConfiguration                 # Componente
+|   |   |       |-- AccessRuleForm.js                       # Formulario
+|   |   |-- reportes
+|   |       |-- registro-actividades                       # (res_users_log)
+|   |       |   |-- ActivityLog                            # Componente
+|   |       |-- auditoria-usuario                          # (res_users_deletion)
+|   |           |-- UserAudit                              # Componente 
 
 
 # PAGES 
@@ -23,7 +37,7 @@ proyecto
 |   |     |-- pages
 |   |           |-- procesos
 |   |           |   |-- gestion-usuarios                   # (res_users) 
-|   |           |   |-- gestion-grupos-usuarios                    # (res_groups)
+|   |           |   |-- gestion-grupos-usuarios                      # (res_groups)
 |   |           |   |-- gestion-contactos-comerciales      # (res_partner)  
 |   |           |-- ajustes
 |   |           |   |-- configuracion-permisos            # (ir.model.access)   
@@ -38,7 +52,7 @@ proyecto
 |-- frontend-nextjs
 |   |-- hooks
  |           |   |-- gestion-usuarios                   # (res_users) 
-|            |   |-- gestion-grupos-usuarios                    # (res_groups)
+|            |   |-- gestion-grupos-usuarios                         # (res_groups)
 |            |   |-- gestion-contactos-comerciales      # (res_partner) 
 |            |   |-- configuracion-permisos             # (ir.model.access)   
 |            |   |-- configuracion-empresa              # (res_company)
@@ -53,7 +67,7 @@ proyecto
 |   |   |-- controllers
 |   |           |-- procesos
 |   |           |   |-- gestion-usuarios                   # (res_users) 
-|   |           |   |-- gestion-grupos-usuarios                    # (res_groups)
+|   |           |   |-- gestion-grupos-usuarios                      # (res_groups)
 |   |           |   |-- gestion-contactos-comerciales      # (res_partner)  
 |   |           |-- ajustes
 |   |           |   |-- configuracion-permisos            # (ir.model.access)   
@@ -71,7 +85,7 @@ proyecto
 |   |   |-- services
 |   |           |-- procesos
 |   |           |   |-- gestion-usuarios                   # (res_users) 
-|   |           |   |-- gestion-grupos-usuarios                    # (res_groups)
+|   |           |   |-- gestion-grupos-usuarios                      # (res_groups)
 |   |           |   |-- gestion-contactos-comerciales      # (res_partner)  
 |   |           |-- ajustes
 |   |           |   |-- configuracion-permisos            # (ir.model.access)   
@@ -89,7 +103,7 @@ proyecto
 |   |   |-- dto
 |   |           |-- procesos
 |   |           |   |-- gestion-usuarios                   # (res_users) 
-|   |           |   |-- gestion-grupos-usuarios                    # (res_groups)
+|   |           |   |-- gestion-grupos-usuarios                      # (res_groups)
 |   |           |   |-- gestion-contactos-comerciales      # (res_partner)  
 |   |           |-- ajustes
 |   |           |   |-- configuracion-permisos            # (ir.model.access)   
@@ -106,7 +120,7 @@ proyecto
 |   |   |-- modules
 |   |           |-- procesos
 |   |           |   |-- gestion-usuarios                   # (res_users) 
-|   |           |   |-- gestion-grupos-usuarios                    # (res_groups)
+|   |           |   |-- gestion-grupos-usuarios                        # (res_groups)
 |   |           |   |-- gestion-contactos-comerciales      # (res_partner)  
 |   |           |-- ajustes
 |   |           |   |-- configuracion-permisos            # (ir.model.access)   
@@ -123,15 +137,15 @@ proyecto
 |   |   |-- entities
 |   |           |-- procesos
 |   |           |   |-- gestion-usuarios                   # (res_users) 
-|   |           |   |-- gestion-grupos-usuarios                    # (res_groups)
+|   |           |   |-- gestion-grupos-usuarios                      # (res_groups)
 |   |           |   |-- gestion-contactos-comerciales      # (res_partner)  
 |   |           |-- ajustes
 |   |           |   |-- configuracion-permisos            # (ir.model.access)   
 |   |           |   |-- configuracion-empresa             # (res_company)
 |   |           |   |-- configuracion-reglas-acceso       # (ir.rule)     
 |   |           |-- reportes
-|   |               |-- registro-actividades             # (res_users_log)
-|   |               |-- auditoria-usuario                # (res_users_deletion) 
+|   |               |-- registro-actividades              # (res_users_log)
+|   |               |-- auditoria-usuario                 # (res_users_deletion) 
 
 - Base de datos
   - res_users
@@ -142,3 +156,5 @@ proyecto
   - ir.rule
   - res_users_log
   - res_users_deletion
+
+ 
